@@ -1,4 +1,4 @@
-# My presentation boilerplate
+# Life after PHP 5.4
 
 ---
 

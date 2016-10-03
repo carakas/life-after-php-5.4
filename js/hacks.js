@@ -22,8 +22,7 @@ $(document).on('ready', function(){
   $('.remark-slides-area .remark-slide-content:first').addClass('center middle');
   $('.remark-slides-area .remark-slide-content:eq(1)').addClass('sumo-jelmer');
   $('.remark-slides-area .remark-slide-content:eq(2)').addClass('sumocoders image-replace');
-  $('.remark-slides-area .remark-slide-content:eq(3)').addClass('symfony image-replace center middle');
-  $('.remark-slides-area .remark-slide-content:eq(4)').addClass('fork image-replace');
+  $('.remark-slides-area .remark-slide-content:eq(3)').addClass('fork image-replace');
 
   $('.remark-slides-area .remark-slide-content').eq(-3).addClass('questions image-replace');
   $('.remark-slides-area .remark-slide-content').eq(-2).addClass('center thanks');
