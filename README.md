@@ -22,6 +22,16 @@
 
 ## Topics
 
+- Some gems from PHP 5.4
+
+- What we skipped with PHP 5.5
+
+- Along came PHP 5.6
+
+- 5 + 1 = PHP 7
+
+- Soon on your servers PHP 7.1
+
 ---
 
 ## Questions?
