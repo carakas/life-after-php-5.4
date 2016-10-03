@@ -34,6 +34,24 @@
 
 ---
 
+## Some gems from PHP 5.4
+
+- Traits
+
+- Short array syntax
+
+- Build in development web server
+
+- Function array dereferencing
+
+```php
+foo()[0]
+```
+
+- ... 
+
+---
+
 ## Questions?
 
 ---
