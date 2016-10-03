@@ -52,6 +52,34 @@ foo()[0]
 
 ---
 
+## What we skipped with PHP 5.5 (1/2)
+
+- Generators
+
+- Try-catch was joined by finally
+
+- Password hashing API
+
+- list support added for foreach
+
+- empty can have an expression as parameter instead of a variable
+
+---
+
+## What we skipped with PHP 5.5 (2/2)
+
+- array and string literal dereferencing
+
+- Class name resolution via ::class
+
+- OPcache was added
+
+- Non-scalar keys in foreach
+
+- GD library got some updates
+
+---
+
 ## Questions?
 
 ---
