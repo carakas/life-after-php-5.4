@@ -414,6 +414,23 @@ foo::bar();
 
 ### Scalar type declarations
 
+Type declaration extended with
+- string
+- int
+- float
+- bool
+
+```php
+function sumOfInts(int ...$ints)
+{
+    return array_sum($ints);
+}
+```
+
+By default it will auto cast if possible
+
+If you want errors instead you need to add `declare(strict_types=1);` at the top of the file
+
 ---
 
 ### Return type declarations
