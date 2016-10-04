@@ -146,6 +146,38 @@ function getLines($file) {
 
 ---
 
+### Password hashing API
+
+- Bye bye `md5` en `sha1`
+
+- Default library to help with the hashing of passwords
+
+- `PASSWORD_DEFAULT` will always contain the most secure algorithm
+
+- You can detect with `password_needs_rehash` if the algorithm has changed and rehash the password on login
+
+- `password_get_info` can be used to check the used algorithm and the cost
+
+---
+
+### Password hashing API
+
+```php
+// Verify stored hash against plain-text password
+if (password_verify($password, $hash)) {
+    // Check if a newer hashing algorithm is available
+    // or the cost has changed
+    if (password_needs_rehash($hash, PASSWORD_DEFAULT)) {
+        // If so, create a new hash, and replace the old one
+        $newHash = password_hash($password, PASSWORD_DEFAULT);
+    }
+
+    // Log user in
+}
+```
+
+---
+
 ## Questions?
 
 ---
