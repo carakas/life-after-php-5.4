@@ -374,6 +374,24 @@ It also will be used for the following functions if no character encoding is giv
 
 ---
 
+## 5 + 1 = PHP 7
+
+- Deprecated Static calls to non-static methods
+
+- Scalar type declarations
+
+- Return type declarations
+
+- Null coalescing operator
+
+- Spaceship operator
+
+- Anonymous classes
+
+- Group use declarations
+
+---
+
 ## Questions?
 
 ---
