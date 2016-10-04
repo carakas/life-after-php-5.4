@@ -24,6 +24,10 @@ $(document).on('ready', function(){
   $('.remark-slides-area .remark-slide-content:eq(2)').addClass('sumocoders image-replace');
   $('.remark-slides-area .remark-slide-content:eq(3)').addClass('fork image-replace');
 
+  // in between questions
+  $('.remark-slides-area .remark-slide-content:eq(19)').addClass('questions image-replace');
+  $('.remark-slides-area .remark-slide-content:eq(26)').addClass('questions image-replace');
+
   $('.remark-slides-area .remark-slide-content').eq(-3).addClass('questions image-replace');
   $('.remark-slides-area .remark-slide-content').eq(-2).addClass('center thanks');
 });

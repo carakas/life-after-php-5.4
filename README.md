@@ -262,6 +262,10 @@ Calling the change method on this class will return a new instance instead of up
 
 ---
 
+## Questions?
+
+---
+
 ## Along came PHP 5.6
 
 - Constant expressions
@@ -363,6 +367,10 @@ It also will be used for the following functions if no character encoding is giv
 - `htmlspecialchars()`
 
 - mbstring functions if the specific configuration is missing
+
+---
+
+## Questions?
 
 ---
 
