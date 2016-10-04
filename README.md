@@ -203,6 +203,34 @@ foreach ($profiles as list($id, $name, $email)) {
 
 ---
 
+### New array function: array_column
+
+```php
+array_column (array $input, $column_key [, $index_key = null ])
+```
+
+```php
+$profiles = [
+    [
+        'name' => 'Jelmer',
+        'email' => 'jelmer@sumocoders.be',
+    ],
+    [
+        'name' => 'Stijn',
+        'email' => 'stijn@sumocoders.be',
+    ],
+];
+$mailingList = array_column($profiles, 'email', 'name');
+
+// true
+$mailingList === [
+  'Jelmer' => 'jelmer@sumocoders.be',
+  'Stijn' => 'stijn@sumocoders.be'
+];
+```
+
+---
+
 ## Questions?
 
 ---
