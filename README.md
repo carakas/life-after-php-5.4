@@ -34,6 +34,14 @@
 
 ---
 
+## Disclaimer
+
+### Not all changes will be discussed
+
+I just took some things out to highlight that I thought where interesting
+
+---
+
 ## Some gems from PHP 5.4
 
 - Traits
