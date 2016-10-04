@@ -392,6 +392,26 @@ It also will be used for the following functions if no character encoding is giv
 
 ---
 
+### Soon on your servers PHP 7.1
+
+- Too few arguments exception
+
+- Nullable types
+
+- Void functions
+
+- Symmetric array destructuring
+
+- Class constant visibility
+
+- Multi catch exception handling
+
+- Support for keys in list()
+
+- Support for negative string offsets
+
+---
+
 ## Questions?
 
 ---
