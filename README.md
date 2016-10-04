@@ -515,6 +515,24 @@ class ConstDemo
 
 ### Multi catch exception handling
 
+```php
+try {
+    // some code
+} catch (FirstException $e) {
+    // some code to handle this
+} catch (SecondException $e) {
+   // exactly the same :(
+}
+```
+Can now be written like this
+```php
+try {
+    // some code
+} catch (FirstException | SecondException $e) {
+    // some code to handle this
+}
+```
+
 ---
 
 ### Support for keys in list()
