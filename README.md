@@ -488,6 +488,15 @@ function blackHole(...$whateverComesMyWay): void
 
 ### Symmetric array destructuring
 
+Just a fancy way to say that
+```php
+list($id, $name) = [1, 'bob'];
+```
+can now be used as
+```php
+[$id, $name] = [1, 'bob'];
+```
+
 ---
 
 ### Class constant visibility
