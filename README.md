@@ -352,6 +352,18 @@ $bananas === 8;
 
 ### Default character encoding
 
+UTF8 is now the default in php.ini for `default_charset`
+
+It also will be used for the following functions if no character encoding is given
+
+- `htmlentities()`
+
+- `html_entity_decode()`
+
+- `htmlspecialchars()`
+
+- mbstring functions if the specific configuration is missing
+
 ---
 
 ## Questions?
