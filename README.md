@@ -42,11 +42,7 @@
 
 - Build in development web server
 
-- Function array dereferencing
-
-```php
-foo()[0]
-```
+- Function array dereferencing `foo()[0]`
 
 - ... 
 
@@ -77,6 +73,57 @@ foo()[0]
 - Non-scalar keys in foreach
 
 - GD library got some updates
+
+---
+
+### Generators
+
+`yield` vs `return` === `machine gun` vs `shotgun`
+
+example: normal implementation of range
+
+```php
+foreach (range(0, 777777) as $i) {
+    echo $i;
+}
+// peak usage 109.5 MB
+```
+
+example: generator implementation of range
+
+```php
+foreach (memoryFriendlyRange(0, 777777) as $i) {
+    echo $i;
+}
+// peak usage 0.25 MB
+```
+
+---
+
+### memoryFriendlyRange source
+
+```php
+function memoryFriendlyRange($start, $limit, $step = 1)
+{
+    if ($start < $limit) {
+        if ($step <= 0) {
+            throw new LogicException('Step must be positive');
+        }
+
+        for ($i = $start; $i <= $limit; $i += $step) {
+            yield $i;
+        }
+    } else {
+        if ($step >= 0) {
+            throw new LogicException('Step must be negative');
+        }
+
+        for ($i = $start; $i >= $limit; $i += $step) {
+            yield $i;
+        }
+    }
+};
+```
 
 ---
 
