@@ -394,6 +394,22 @@ It also will be used for the following functions if no character encoding is giv
 
 ### Deprecated Static calls to non-static methods
 
+PHP 7 became a little less forgiving
+
+Calling non-static methods statically has been deprecated
+
+But then again, you shouldn't be doing it anyway
+
+```php
+class foo {
+    function bar() {
+        echo 'I am not static!';
+    }
+}
+
+foo::bar();
+```
+
 ---
 
 ### Scalar type declarations
