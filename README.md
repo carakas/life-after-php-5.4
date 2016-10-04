@@ -56,7 +56,7 @@
 
 - Password hashing API
 
-- list support added for foreach
+- List support added for foreach
 
 - New array function: array_column
 
@@ -173,6 +173,31 @@ if (password_verify($password, $hash)) {
     }
 
     // Log user in
+}
+```
+
+---
+
+### List support added for foreach
+
+The only sad thing is that you can't use an associative array
+
+```php
+$profiles = [
+    [
+        1,
+        'Jelmer',
+        'jelmer@sumocoders.be',
+    ],
+    [
+        2,
+        'Stijn',
+        'stijn@sumocoders.be',
+    ],
+];
+
+foreach ($profiles as list($id, $name, $email)) {
+    var_dump($id, $name, $email);
 }
 ```
 
