@@ -458,6 +458,19 @@ Starting PHP 7.1 warning bumped up to error: ArgumentCountError
 
 ### Nullable types
 
+```php
+function nullableReturn(): ?string
+{
+    return null;
+}
+```
+```php
+function nullableParameter(?string $parameter)
+{
+    // rest of function
+}
+```
+
 ---
 
 ### Void functions
