@@ -432,15 +432,15 @@ It also will be used for the following functions if no character encoding is giv
 
 - Void functions
 
-- Symmetric array destructuring
+- Class constant visibility
 
 ---
 
 ## Soon on your servers PHP 7.1 (2/2)
 
-- Class constant visibility
-
 - Multi catch exception handling
+
+- Symmetric array destructuring
 
 - Support for keys in list()
 
@@ -486,19 +486,6 @@ function blackHole(...$whateverComesMyWay): void
 
 ---
 
-### Symmetric array destructuring
-
-Just a fancy way to say that
-```php
-list($id, $name) = [1, 'bob'];
-```
-can now be used as
-```php
-[$id, $name] = [1, 'bob'];
-```
-
----
-
 ### Class constant visibility
 
 ```php
@@ -535,7 +522,41 @@ try {
 
 ---
 
+### Symmetric array destructuring
+
+Just a fancy way to say that
+```php
+list($id, $name) = [1, 'bob'];
+```
+can now be used as
+```php
+[$id, $name] = [1, 'bob'];
+```
+
+---
+
 ### Support for keys in list()
+
+Remember list not working with associative arrays?
+
+**They fixed it**
+
+```php
+$profiles = [
+    [
+        'name' => 'Jelmer',
+        'email' => 'jelmer@sumocoders.be',
+    ],
+    [
+        'name' => 'Stijn',
+        'email' => 'stijn@sumocoders.be',
+    ],
+];
+
+foreach ($profiles as ['name' => $name, 'email' => $email]) {
+    var_dump($name, $email);
+}
+```
 
 ---
 
