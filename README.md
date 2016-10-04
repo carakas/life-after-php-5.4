@@ -229,6 +229,18 @@ $mailingList === [
 
 ---
 
+### Class name resolution via ::class
+
+```php
+namespace Name\Space;
+class ClassName {}
+
+// Name\Space\ClassName
+echo ClassName::class;
+```
+
+---
+
 ## Questions?
 
 ---
