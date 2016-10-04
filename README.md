@@ -64,8 +64,6 @@
 
 ## What we skipped with PHP 5.5 (2/2)
 
-- array and string literal dereferencing
-
 - Class name resolution via ::class
 
 - OPcache was added
