@@ -27,6 +27,7 @@ $(document).on('ready', function(){
   // in between questions
   $('.remark-slides-area .remark-slide-content:eq(19)').addClass('questions image-replace');
   $('.remark-slides-area .remark-slide-content:eq(26)').addClass('questions image-replace');
+  $('.remark-slides-area .remark-slide-content:eq(35)').addClass('questions image-replace');
 
   $('.remark-slides-area .remark-slide-content').eq(-3).addClass('questions image-replace');
   $('.remark-slides-area .remark-slide-content').eq(-2).addClass('center thanks');

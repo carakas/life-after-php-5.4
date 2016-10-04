@@ -262,7 +262,7 @@ Calling the change method on this class will return a new instance instead of up
 
 ---
 
-## Questions?
+### Questions?
 
 ---
 
@@ -370,7 +370,7 @@ It also will be used for the following functions if no character encoding is giv
 
 ---
 
-## Questions?
+### Questions?
 
 ---
 
@@ -392,7 +392,39 @@ It also will be used for the following functions if no character encoding is giv
 
 ---
 
-### Soon on your servers PHP 7.1
+### Deprecated Static calls to non-static methods
+
+---
+
+### Scalar type declarations
+
+---
+
+### Return type declarations
+
+---
+
+### Null coalescing operator
+
+---
+
+### Spaceship operator
+
+---
+
+### Anonymous classes
+
+---
+
+### Group use declarations
+
+---
+
+### Questions?
+
+---
+
+## Soon on your servers PHP 7.1 (1/2)
 
 - Too few arguments exception
 
@@ -401,6 +433,10 @@ It also will be used for the following functions if no character encoding is giv
 - Void functions
 
 - Symmetric array destructuring
+
+---
+
+## Soon on your servers PHP 7.1 (2/2)
 
 - Class constant visibility
 
@@ -412,7 +448,39 @@ It also will be used for the following functions if no character encoding is giv
 
 ---
 
-## Questions?
+### Too few arguments exception
+
+---
+
+### Nullable types
+
+---
+
+### Void functions
+
+---
+
+### Symmetric array destructuring
+
+---
+
+### Class constant visibility
+
+---
+
+### Multi catch exception handling
+
+---
+
+### Support for keys in list()
+
+---
+
+### Support for negative string offsets
+
+---
+
+### Questions?
 
 ---
 
