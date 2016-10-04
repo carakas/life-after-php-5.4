@@ -450,6 +450,10 @@ It also will be used for the following functions if no character encoding is giv
 
 ### Too few arguments exception
 
+PHP is a forgiving language but...
+
+Starting PHP 7.1 warning bumped up to error: ArgumentCountError 
+
 ---
 
 ### Nullable types
