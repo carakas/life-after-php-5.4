@@ -66,7 +66,7 @@
 
 - Class name resolution via ::class
 
-- OPcache was added
+- OPcache
 
 - Non-scalar keys in foreach
 
@@ -238,6 +238,13 @@ class ClassName {}
 // Name\Space\ClassName
 echo ClassName::class;
 ```
+---
+
+### OPcache
+
+- Is your code not updating? => `opcache_reset()`
+
+- Performance improvement by storing the parsed code in memory
 
 ---
 
