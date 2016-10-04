@@ -270,6 +270,8 @@ Calling the change method on this class will return a new instance instead of up
 
 - Argument unpacking via ...
 
+- Exponentiation via **
+
 - Default character encoding
 
 ---
@@ -330,6 +332,20 @@ function addUser($id, $name, $email) {
 
 $user=[1, 'bob', 'bob@thebuild.er']
 addUser(...$user);
+```
+
+---
+
+### Exponentiation via **
+
+```php
+//true
+8 === 2**3;
+
+$bananas = 2;
+$bananas **= 3;
+// true
+$bananas === 8;
 ```
 
 ---
