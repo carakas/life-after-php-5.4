@@ -276,6 +276,28 @@ Calling the change method on this class will return a new instance instead of up
 
 ### Constant expressions
 
+Pre PHP 5.6
+
+```php
+const PATH_WWW = '/Sites/forkcms/demo';
+const BACKEND_PATH = '/Sites/forkcms/demo/src/Backend';
+const BACKEND_CORE_PATH = '/Sites/forkcms/demo/src/Backend/Core';
+```
+
+PHP 5.6 and up
+
+```php
+const PATH_WWW = '/Sites/forkcms/demo';
+const BACKEND_PATH = PATH_WWW . '/src/Backend';
+const BACKEND_CORE_PATH = BACKEND_PATH . '/Core';
+```
+
+And also arrays
+
+```php
+const ARR = ['a', 'b'];
+```
+
 ---
 
 ### Variadic functions via ...
