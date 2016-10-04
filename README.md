@@ -254,6 +254,34 @@ Calling the change method on this class will return a new instance instead of up
 
 ---
 
+## Along came PHP 5.6
+
+- Constant expressions
+
+- Variadic functions via ...
+
+- Argument unpacking via ...
+
+- Default character encoding
+
+---
+
+### Constant expressions
+
+---
+
+### Variadic functions via ...
+
+---
+
+### Argument unpacking via ...
+
+---
+
+### Default character encoding
+
+---
+
 ## Questions?
 
 ---
