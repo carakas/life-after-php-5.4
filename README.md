@@ -418,6 +418,20 @@ It also will be used for the following functions if no character encoding is giv
 
 ### Group use declarations
 
+Pre PHP 7
+
+```php
+use some\namespace\ClassA;
+use some\namespace\ClassB;
+use some\namespace\ClassC as C;
+```
+
+PHP 7 and up
+
+```php
+use some\namespace\{ClassA, ClassB, ClassC as C};
+```
+
 ---
 
 ### Questions?
