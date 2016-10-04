@@ -58,17 +58,15 @@
 
 - List support added for foreach
 
-- New array function: array_column
-
 ---
 
 ## What we skipped with PHP 5.5 (2/2)
 
+- New array function: array_column
+
 - Class name resolution via ::class
 
 - OPcache
-
-- Non-scalar keys in foreach
 
 - DateTimeImmutable
 
@@ -245,6 +243,14 @@ echo ClassName::class;
 - Is your code not updating? => `opcache_reset()`
 
 - Performance improvement by storing the parsed code in memory
+
+---
+
+### DateTimeImmutable
+
+Exactly the same as DateTime only it is immutable
+
+Calling the change method on this class will return a new instance instead of updating the current value
 
 ---
 
