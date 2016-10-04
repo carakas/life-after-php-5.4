@@ -406,6 +406,22 @@ It also will be used for the following functions if no character encoding is giv
 
 ### Null coalescing operator
 
+```php
+$username = isset($_GET['user']) ? $_GET['user'] : 'nobody';
+```
+
+Can now be written as
+
+```php
+$username = $_GET['user'] ?? 'nobody';
+```
+
+And it can be chained
+
+```php
+$username = $_GET['user'] ?? $_POST['user'] ?? 'nobody';
+```
+
 ---
 
 ### Spaceship operator
