@@ -414,6 +414,15 @@ It also will be used for the following functions if no character encoding is giv
 
 ### Anonymous classes
 
+```php
+$debugLogger = new class implements Logger {
+    public function log(string $msg) {
+        echo $msg;
+    }
+};
+$app = new Application($debugLogger);
+```
+
 ---
 
 ### Group use declarations
