@@ -562,6 +562,20 @@ foreach ($profiles as ['name' => $name, 'email' => $email]) {
 
 ### Support for negative string offsets
 
+You could already do this
+
+```php
+// true
+'b' === 'abc'[1];
+```
+
+But now they also added
+
+```php
+// true
+'b' === 'abc'[-2];
+```
+
 ---
 
 ### Questions?
