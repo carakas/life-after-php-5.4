@@ -127,6 +127,25 @@ function memoryFriendlyRange($start, $limit, $step = 1)
 
 ---
 
+### Try-catch was joined by finally
+
+Everything in the finally block will always be executed, also if we have an exception.
+
+```php
+function getLines($file) {
+    $f = fopen($file, 'r');
+    try {
+        while ($line = fgets($f)) {
+            yield $line;
+        }
+    } finally {
+        fclose($f);
+    }
+}
+```
+
+---
+
 ## Questions?
 
 ---
