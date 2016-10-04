@@ -58,7 +58,7 @@
 
 - list support added for foreach
 
-- empty can have an expression as parameter instead of a variable
+- New array function: array_column
 
 ---
 
@@ -72,7 +72,7 @@
 
 - Non-scalar keys in foreach
 
-- GD library got some updates
+- DateTimeImmutable
 
 ---
 
@@ -100,7 +100,7 @@ foreach (memoryFriendlyRange(0, 777777) as $i) {
 
 ---
 
-### memoryFriendlyRange source
+### Generators
 
 ```php
 function memoryFriendlyRange($start, $limit, $step = 1)
