@@ -466,7 +466,7 @@ use some\namespace\{ClassA, ClassB, ClassC as C};
 
 PHP is a forgiving language but...
 
-Starting PHP 7.1 warning bumped up to error: ArgumentCountError 
+warning bumped up to error: ArgumentCountError 
 
 ---
 
