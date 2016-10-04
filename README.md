@@ -475,6 +475,15 @@ function nullableParameter(?string $parameter)
 
 ### Void functions
 
+```php
+function blackHole(...$whateverComesMyWay): void
+{
+    return;
+}
+```
+
+##### warning: returning null will give an error
+
 ---
 
 ### Symmetric array destructuring
