@@ -302,9 +302,35 @@ const ARR = ['a', 'b'];
 
 ### Variadic functions via ...
 
+Pre PHP 5.6
+
+```php
+function hire($name) {
+    $professions = array_slice(func_get_args(), 1);
+    // rest of function
+}
+```
+
+PHP 5.6 and up
+
+```php
+function hire($name, ...$professions) {
+    // rest of function
+}
+```
+
 ---
 
 ### Argument unpacking via ...
+
+```php
+function addUser($id, $name, $email) {
+    // rest of function
+}
+
+$user=[1, 'bob', 'bob@thebuild.er']
+addUser(...$user);
+```
 
 ---
 
