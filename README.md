@@ -402,6 +402,17 @@ It also will be used for the following functions if no character encoding is giv
 
 ### Return type declarations
 
+PHPDoc used to tell us the return type
+
+Now you can enforce it
+
+```php
+function getName(): string
+{
+    return $this->string;
+}
+```
+
 ---
 
 ### Null coalescing operator
